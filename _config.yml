@@ -71,9 +71,9 @@ content:
   #       quote: >
   #         This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
         description: | # this will include new lines to allow paragraphs
-          Applicability of a flood forecasting system for Nebraska watersheds |
-          Snow-detonated floods: Assessment of the US midwest March 2019 event |
-          An autoencoder-based snow drought index |
+          Applicability of a flood forecasting system for Nebraska watersheds 
+          Snow-detonated floods: Assessment of the US midwest March 2019 event 
+          An autoencoder-based snow drought index 
 
       - layout: left
         title: 2022
