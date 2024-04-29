@@ -68,15 +68,15 @@ content:
           # - title:  Github page for project (eg. sproogen/modern-resume-theme)
           #   icon: fab fa-github
           #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
-        quote: >
-          This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
+        # quote: >
+        #   This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
         description: | # this will include new lines to allow paragraphs
-          Applicability of a flood forecasting system for Nebraska watersheds 
-          
-  # Snow-detonated floods: Assessment of the US midwest March 2019 event \n An autoencoder-based snow drought index 
+          Applicability of a flood forecasting system for Nebraska watersheds |
+          Snow-detonated floods: Assessment of the US midwest March 2019 event |
+          An autoencoder-based snow drought index 
 
-  #     - layout: left
-  #       title: 2022
+      - layout: left
+        title: 2022 -
   #       # link: github.com/sproogen
   # #       # link_text: Project Website
   # #       additional_links:
@@ -88,8 +88,8 @@ content:
   # #         #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
   # #       quote: >
   # #         This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
-  #       description: | # this will include new lines to allow paragraphs
-  #         The great lakes runoff intercomparison project phase 4: the great lakes (GRIP-GL)
+        description: | # this will include new lines to allow paragraphs
+          The great lakes runoff intercomparison project phase 4: the great lakes (GRIP-GL)
           
                      
           
