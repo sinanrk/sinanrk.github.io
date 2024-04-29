@@ -54,24 +54,24 @@ about_content: | # this will include new lines to allow paragraphs
 #I am most skilled in: <mark>AWS</mark> and <mark>Eating Pizza</mark>
 
 content:
-  # - title: Publications # Title for the section
-  #   layout: list # Type of content section (list/text)
-  #   content:
-  #     - layout: left
-  #       title: 2023
+  - title: Publications # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: 2023 -
         # link: github.com/sproogen
-  #       # link_text: Project Website
-  #       additional_links:
-  #         - title:  sproogen/modern-resume-theme
-  #           icon: fab fa-github
-  #           url: github.com/sproogen/modern-resume-theme
-  #         # - title:  Github page for project (eg. sproogen/modern-resume-theme)
-  #         #   icon: fab fa-github
-  #         #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
-  #       quote: >
-  #         This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
-        # description: | # this will include new lines to allow paragraphs
-        #   Applicability of a flood forecasting system for Nebraska watersheds 
+        # link_text: Project Website
+        # additional_links:
+        #   - title:  sproogen/modern-resume-theme
+        #     icon: fab fa-github
+        #     url: github.com/sproogen/modern-resume-theme
+          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          #   icon: fab fa-github
+          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        quote: >
+          This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
+        description: | # this will include new lines to allow paragraphs
+          Applicability of a flood forecasting system for Nebraska watersheds 
           
   # Snow-detonated floods: Assessment of the US midwest March 2019 event \n An autoencoder-based snow drought index 
 
