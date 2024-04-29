@@ -22,7 +22,7 @@ github_username:  sinanrk
 # facebook_username: jekyll
 # flickr_username: jekyll
 #instagram_username: chummavitte
-linkedin_username: sinan-rasiya-koya
+linkedin_username: sinan-rasiya-koya-022844152
 # xing_username: jekyll
 # pinterest_username: jekyll
 # youtube_username: globalmtb
@@ -59,7 +59,7 @@ content:
     content:
       - layout: left
         title: 2023
-        link: github.com/sproogen
+        # link: github.com/sproogen
   #       # link_text: Project Website
   #       additional_links:
   #         - title:  sproogen/modern-resume-theme
@@ -77,7 +77,7 @@ content:
 
       - layout: left
         title: 2022
-        link: github.com/sproogen
+        # link: github.com/sproogen
   #       # link_text: Project Website
   #       additional_links:
   #         - title:  sproogen/modern-resume-theme
