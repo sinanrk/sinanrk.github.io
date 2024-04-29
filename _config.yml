@@ -47,7 +47,7 @@ googlescholar_username: qrAUhPQAAAAJ
 
 # About Section
 # about_title: About Me
-about_profile_image: images/ProfilePic.jpg
+about_profile_image: #images/ProfilePic.jpg
 about_content: | # this will include new lines to allow paragraphs
   Hi, my name's Sinan and I'm a PhD student working on ML in Hydrology. 
 
@@ -71,9 +71,7 @@ content:
   #       quote: >
   #         This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
         description: | # this will include new lines to allow paragraphs
-          Applicability of a flood forecasting system for Nebraska watersheds 
-          Snow-detonated floods: Assessment of the US midwest March 2019 event 
-          An autoencoder-based snow drought index 
+          Applicability of a flood forecasting system for Nebraska watersheds \n Snow-detonated floods: Assessment of the US midwest March 2019 event \n An autoencoder-based snow drought index 
 
       - layout: left
         title: 2022
