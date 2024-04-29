@@ -47,19 +47,19 @@ googlescholar_username: qrAUhPQAAAAJ
 
 # About Section
 # about_title: About Me
-about_profile_image: images/profile.jpg
+about_profile_image: images/ProfilePic.jpg
 about_content: | # this will include new lines to allow paragraphs
   Hi, my name's Sinan and I'm a PhD student working on ML in Hydrology. 
 
 #I am most skilled in: <mark>AWS</mark> and <mark>Eating Pizza</mark>
 
 content:
-  # - title: Publications # Title for the section
-  #   layout: list # Type of content section (list/text)
-  #   content:
-  #     - layout: top-middle
-  #       title: Super awesome project
-  #       link: github.com/sproogen
+  - title: Publications # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: 2023
+        link: github.com/sproogen
   #       # link_text: Project Website
   #       additional_links:
   #         - title:  sproogen/modern-resume-theme
@@ -70,8 +70,29 @@ content:
   #         #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
   #       quote: >
   #         This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
-  #       description: | # this will include new lines to allow paragraphs
-  #         I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
+        description: | # this will include new lines to allow paragraphs
+          Applicability of a flood forecasting system for Nebraska watersheds |
+          Snow-detonated floods: Assessment of the US midwest March 2019 event |
+          An autoencoder-based snow drought index |
+
+      - layout: left
+        title: 2022
+        link: github.com/sproogen
+  #       # link_text: Project Website
+  #       additional_links:
+  #         - title:  sproogen/modern-resume-theme
+  #           icon: fab fa-github
+  #           url: github.com/sproogen/modern-resume-theme
+  #         # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+  #         #   icon: fab fa-github
+  #         #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+  #       quote: >
+  #         This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
+        description: | # this will include new lines to allow paragraphs
+          The great lakes runoff intercomparison project phase 4: the great lakes (GRIP-GL)
+          
+                     
+          
 
   # - title: Experience # Title for the section
   #   layout: list # Type of content section (list/text)
@@ -94,10 +115,14 @@ content:
         title: University of Nebraska-Lincoln
         caption: 2021 - Present
         sub_title: PhD Civil Engineering (Water Resources)
-        quote: >
-          Established in 18xx. More history about the dept. 
-        description: | # this will include new lines to allow paragraphs
-          During my time at UNL.... write more.
+        # quote: >
+        #   Established in 18xx. More history about the dept. 
+        # description: | # this will include new lines to allow paragraphs
+        #   During my time at UNL.... write more.
+      - layout: left
+        title: Indian Institude of Technology, Gandhinagar
+        caption: 2016 - 2020
+        sub_title: Bachelor of Technology, Civil Engineering
 
   # - title: A Little More About Me
   #   layout: text
