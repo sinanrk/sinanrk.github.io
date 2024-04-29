@@ -71,8 +71,8 @@ content:
         # quote: >
         #   This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
         description: | # this will include new lines to allow paragraphs
-          Applicability of a flood forecasting system for Nebraska watersheds |
-          Snow-detonated floods: Assessment of the US midwest March 2019 event |
+          Applicability of a flood forecasting system for Nebraska watersheds \n
+          Snow-detonated floods: Assessment of the US midwest March 2019 event \n
           An autoencoder-based snow drought index 
 
       - layout: left
@@ -115,18 +115,18 @@ content:
         title: University of Nebraska-Lincoln
         caption: 2021 - Present
         sub_title: PhD Civil Engineering (Water Resources)
-        quote: >
-          Established in 18xx. More history about the dept. 
+        # quote: >
+        #   Established in 18xx. More history about the dept. 
         description: | # this will include new lines to allow paragraphs
-          During my time at UNL.... write more.
+          Research is the main thing. Some badminton too.
       - layout: left
         title: Indian Institude of Technology, Gandhinagar
         caption: 2016 - 2020
         sub_title: Bachelor of Technology, Civil Engineering
-        quote: >
-          Established in 18xx. More history about the dept. 
+        # quote: >
+        #   Established in 18xx. More history about the dept. 
         description: | # this will include new lines to allow paragraphs
-          During my time at UNL.... write more.
+          Pitching time. Had fun playing football (I mean soccer)
 
   # - title: A Little More About Me
   #   layout: text
