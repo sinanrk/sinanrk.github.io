@@ -1,5 +1,5 @@
 # Site
-repository: sinanrk/sinanrk
+repository: sinanrk/modern-resume-theme
 #favicon: #images/favicon.ico
 
 # Content configuration version
@@ -58,7 +58,7 @@ content:
     layout: list # Type of content section (list/text)
     content:
       - layout: top
-        title: 2023 :
+        title: 2023 - 
         # link: github.com/sproogen
         # link_text: Project Website
         # additional_links:
@@ -86,7 +86,7 @@ content:
           ***
 
       - layout: left
-        title: 2022 :
+        title: 2022 -
   #       # link: github.com/sproogen
   # #       # link_text: Project Website
   # #       additional_links:
