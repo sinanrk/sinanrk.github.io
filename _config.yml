@@ -57,7 +57,7 @@ content:
   - title: Publications # Title for the section
     layout: list # Type of content section (list/text)
     content:
-      - layout: top
+      - layout: left
         title: 2023 - 
         # link: github.com/sproogen
         # link_text: Project Website
