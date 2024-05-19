@@ -73,17 +73,17 @@ content:
         description: | # this will include new lines to allow paragraphs
           Applicability of a flood forecasting system for Nebraska watersheds  
           *Environmental Modelling & Software* | <https://doi.org/10.1016/j.envsoft.2023.105693>
-
+          .. Some description
           
           Snow-detonated floods: Assessment of the US midwest March 2019 event  
-          *Journal of Hydrology: Regional Studies* <https://doi.org/10.1016/j.ejrh.2023.101387>
-
+          *Journal of Hydrology: Regional Studies* | <https://doi.org/10.1016/j.ejrh.2023.101387>
+          ## Some description
           
           An autoencoder-based snow drought index    
-          *Scientific Reports* <https://doi.org/10.1038/s41598-023-47999-5>
+          *Scientific Reports* | <https://doi.org/10.1038/s41598-023-47999-5>
+          ...Some description
           
           ***
-
       - layout: left
         title: 2022 -
   #       # link: github.com/sproogen
@@ -101,9 +101,7 @@ content:
           The great lakes runoff intercomparison project phase 4: the great lakes (GRIP-GL)
           Hydrology and Earth System Sciences | <https://doi.org/10.5194/hess-26-3537-2022>
           
-                     
-          
-
+          ***
   # - title: Experience # Title for the section
   #   layout: list # Type of content section (list/text)
   #   content:
