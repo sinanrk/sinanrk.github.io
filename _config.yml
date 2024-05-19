@@ -57,6 +57,39 @@ content:
   - title: Publications # Title for the section
     layout: list # Type of content section (list/text)
     content:
+       - layout: left
+        title: 2024 - 
+        # link: github.com/sproogen
+        # link_text: Project Website
+        # additional_links:
+        #   - title:  sproogen/modern-resume-theme
+        #     icon: fab fa-github
+        #     url: github.com/sproogen/modern-resume-theme
+          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          #   icon: fab fa-github
+          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        # quote: >
+        #   This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
+        description: | # this will include new lines to allow paragraphs
+          > ## Northern Pacific sea-level pressure controls rain-on-snow in North America  
+          > *Communications Earth & Environment* | <https://doi.org/10.1038/s43247-024-01431-6>  
+          > <br>
+          >   This study examines the causal drivers of rain-on-snow (ROS) events in North America, 
+          proposing a new ROS identification method and finding a strong link between the North-Pacific Index 
+          and ROS frequencies across the continent, offering insights into ROS mechanisms.
+          <br>  
+
+          
+          > ## Temporal Fusion Transformers for streamflow Prediction: Value of combining attention with recurrence  
+          > *Journal of Hydrology* | <https://doi.org/10.1016/j.jhydrol.2024.131301>  
+          > <br>
+          >   This study employs the Temporal Fusion Transformer (TFT) architecture, combining recurrence and attention mechanisms, 
+          and tests its efficacy against LSTM and Transformers using the Caravan dataset. Results show TFT outperforms LSTM and 
+          Transformers in streamflow prediction across globally distributed catchments, offering explainable insights into streamflow 
+          generation processes.
+          <br>  
+          
+          ***  
       - layout: left
         title: 2023 - 
         # link: github.com/sproogen
@@ -115,7 +148,7 @@ content:
   # #         This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
         description: | # this will include new lines to allow paragraphs
           > ## The great lakes runoff intercomparison project phase 4: the great lakes (GRIP-GL)  
-          > *Hydrology and Earth System Sciences* | <https://doi.org/10.5194/hess-26-3537-2022>
+          > *Hydrology and Earth System Sciences* | <https://doi.org/10.5194/hess-26-3537-2022>  
           > <br>
           >   Model intercomparison studies evaluate various models over the Great Lakes region. 
           This study involved 13 diverse models, using standardized setups to compare their performance in simulating streamflow, actual evapotranspiration, surface soil moisture, and snow water equivalent.  
