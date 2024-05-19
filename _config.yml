@@ -152,7 +152,13 @@ content:
           > <br>
           >   Model intercomparison studies evaluate various models over the Great Lakes region. 
           This study involved 13 diverse models, using standardized setups to compare their performance in simulating streamflow, actual evapotranspiration, surface soil moisture, and snow water equivalent.  
-          
+
+          > ## Application of Neural Networks for Hydrologic Process Understanding at a Midwestern Watershed  
+          > *Hydrology* | <https://doi.org/10.3390/hydrology10020027>  
+          > <br>
+          >   This study investigates the impact of conservation practices on flood mitigation in the Shell Creek Watershed (SCW), 
+          Nebraska, using an artificial neural network (ANN)-based rainfall-runoff model. Thirteen controlling factors were analyzed, 
+          alongside flood frequency and drought severity.
           
 
   # - title: Experience # Title for the section
