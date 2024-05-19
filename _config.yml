@@ -58,38 +58,38 @@ content:
     layout: list # Type of content section (list/text)
     content:
        - layout: left
-        title: 2024 - 
-        # link: github.com/sproogen
-        # link_text: Project Website
-        # additional_links:
-        #   - title:  sproogen/modern-resume-theme
-        #     icon: fab fa-github
-        #     url: github.com/sproogen/modern-resume-theme
-          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
-          #   icon: fab fa-github
-          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
-        # quote: >
-        #   This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
-        description: | # this will include new lines to allow paragraphs
-          > ## Northern Pacific sea-level pressure controls rain-on-snow in North America  
-          > *Communications Earth & Environment* | <https://doi.org/10.1038/s43247-024-01431-6>  
-          > <br>
-          >   This study examines the causal drivers of rain-on-snow (ROS) events in North America, 
-          proposing a new ROS identification method and finding a strong link between the North-Pacific Index 
-          and ROS frequencies across the continent, offering insights into ROS mechanisms.
-          <br>  
+         title: 2024 - 
+          # link: github.com/sproogen
+          # link_text: Project Website
+          # additional_links:
+          #   - title:  sproogen/modern-resume-theme
+          #     icon: fab fa-github
+          #     url: github.com/sproogen/modern-resume-theme
+            # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+            #   icon: fab fa-github
+            #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+          # quote: >
+          #   This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
+         description: | # this will include new lines to allow paragraphs
+           > ## Northern Pacific sea-level pressure controls rain-on-snow in North America  
+           > *Communications Earth & Environment* | <https://doi.org/10.1038/s43247-024-01431-6>  
+           > <br>
+           >   This study examines the causal drivers of rain-on-snow (ROS) events in North America, 
+           proposing a new ROS identification method and finding a strong link between the North-Pacific Index 
+           and ROS frequencies across the continent, offering insights into ROS mechanisms.
+           <br>  
 
-          
-          > ## Temporal Fusion Transformers for streamflow Prediction: Value of combining attention with recurrence  
-          > *Journal of Hydrology* | <https://doi.org/10.1016/j.jhydrol.2024.131301>  
-          > <br>
-          >   This study employs the Temporal Fusion Transformer (TFT) architecture, combining recurrence and attention mechanisms, 
-          and tests its efficacy against LSTM and Transformers using the Caravan dataset. Results show TFT outperforms LSTM and 
-          Transformers in streamflow prediction across globally distributed catchments, offering explainable insights into streamflow 
-          generation processes.
-          <br>  
-          
-          ***  
+           
+           > ## Temporal Fusion Transformers for streamflow Prediction: Value of combining attention with recurrence  
+           > *Journal of Hydrology* | <https://doi.org/10.1016/j.jhydrol.2024.131301>  
+           > <br>
+           >   This study employs the Temporal Fusion Transformer (TFT) architecture, combining recurrence and attention mechanisms, 
+           and tests its efficacy against LSTM and Transformers using the Caravan dataset. Results show TFT outperforms LSTM and 
+           Transformers in streamflow prediction across globally distributed catchments, offering explainable insights into streamflow 
+           generation processes.
+           <br>  
+            
+           ***  
       - layout: left
         title: 2023 - 
         # link: github.com/sproogen
