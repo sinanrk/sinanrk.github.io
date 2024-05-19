@@ -58,7 +58,7 @@ content:
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        title: 2023 -
+        title: 2023 .
         # link: github.com/sproogen
         # link_text: Project Website
         # additional_links:
@@ -71,12 +71,16 @@ content:
         # quote: >
         #   This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
         description: | # this will include new lines to allow paragraphs
-          Applicability of a flood forecasting system for Nebraska watersheds \n
-          Snow-detonated floods: Assessment of the US midwest March 2019 event \n
-          An autoencoder-based snow drought index 
+          * Applicability of a flood forecasting system for Nebraska watersheds 
+          *Environmental Modelling & Software* | <https://doi.org/10.1016/j.envsoft.2023.105693>
+          ___
+          * Snow-detonated floods: Assessment of the US midwest March 2019 event 
+          ___
+          * An autoencoder-based snow drought index 
+          ___
 
       - layout: left
-        title: 2022 -
+        title: 2022 .
   #       # link: github.com/sproogen
   # #       # link_text: Project Website
   # #       additional_links:
@@ -89,7 +93,7 @@ content:
   # #       quote: >
   # #         This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
         description: | # this will include new lines to allow paragraphs
-          The great lakes runoff intercomparison project phase 4: the great lakes (GRIP-GL)
+          * The great lakes runoff intercomparison project phase 4: the great lakes (GRIP-GL)
           
                      
           
