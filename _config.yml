@@ -74,20 +74,27 @@ content:
           > ## Applicability of a flood forecasting system for Nebraska watersheds  
           > *Environmental Modelling & Software* | <https://doi.org/10.1016/j.envsoft.2023.105693>  
           > <br>
-          >   Some description
+          >   This study developed a flood forecasting system prototype for Nebraska's Elkhorn River basin, 
+          incorporating components from the Iowa Flood Information System, including the Hillslope Link Model with 
+          enhanced snow process parameterizations, resulting in improved flood peak simulations.
           <br>  
 
           
           > ## Snow-detonated floods: Assessment of the US midwest March 2019 event  
           > *Journal of Hydrology: Regional Studies* | <https://doi.org/10.1016/j.ejrh.2023.101387>  
           > <br>
-          >   Some desciption
+          >   The study analyzes the unexpected major snow-related flood in March 2019 caused by a meteorological bomb cyclone, 
+          assesses early-spring peak flow trends, explores a parsimonious hydrological model with a snow component, 
+          and validates the model's performance over the last 20 years
           <br>  
           
           > ## An autoencoder-based snow drought index    
           > *Scientific Reports* | <https://doi.org/10.1038/s41598-023-47999-5>  
           > <br>
-          >   Some description  
+          >   The study introduces the Snow Drought Response Index (SnoDRI), a novel indicator designed to efficiently identify 
+          and quantify snow drought occurrences, particularly in regions where snow significantly impacts hydrology, such as the 
+          western United States. Utilizing cutting-edge machine learning algorithms, including self-supervised learning of autoencoders 
+          combined with mutual information, the index is calculated from various snow-related variables.  
 
           
           ***  
@@ -109,6 +116,10 @@ content:
         description: | # this will include new lines to allow paragraphs
           > ## The great lakes runoff intercomparison project phase 4: the great lakes (GRIP-GL)  
           > *Hydrology and Earth System Sciences* | <https://doi.org/10.5194/hess-26-3537-2022>
+          > <br>
+          >   Model intercomparison studies evaluate various models over the Great Lakes region. 
+          This study involved 13 diverse models, using standardized setups to compare their performance in simulating streamflow, actual evapotranspiration, surface soil moisture, and snow water equivalent.  
+          
           
 
   # - title: Experience # Title for the section
