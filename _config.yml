@@ -71,27 +71,22 @@ content:
         # quote: >
         #   This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
         description: | # this will include new lines to allow paragraphs
-          ## Applicability of a flood forecasting system for Nebraska watersheds  
-          *Environmental Modelling & Software* | <https://doi.org/10.1016/j.envsoft.2023.105693>  
+          > ## Applicability of a flood forecasting system for Nebraska watersheds  
+          > *Environmental Modelling & Software* | <https://doi.org/10.1016/j.envsoft.2023.105693>  
           <br>
           
              Some description
-          
+          <br>
           ## Snow-detonated floods: Assessment of the US midwest March 2019 event  
           *Journal of Hydrology: Regional Studies* | <https://doi.org/10.1016/j.ejrh.2023.101387>  
-          <br><br>
+          <br>
              Some desciption
-          
+          <br>
           ## An autoencoder-based snow drought index    
           *Scientific Reports* | <https://doi.org/10.1038/s41598-023-47999-5>  
-
-
           
              Some description
-
-
-
-          
+          <br>
           ***  
 
           
