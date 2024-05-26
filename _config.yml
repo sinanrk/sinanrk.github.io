@@ -192,14 +192,12 @@ content:
 
           Visit our lab website [here](https://roy.unl.edu)
       - layout: left
-        title: | #
-          Indian Institute of Technology  
-          <br>
-          Gandhinagar
+        title: Indian Institute of Technology Gandhinagar
         caption: 2016 - 2020
         sub_title: | #
-          >Bachelor of Technology  
-          >Civil Engineering
+          Bachelor of Technology  
+          <br>
+          Civil Engineering
         # quote: >
         #   Established in 18xx. More history about the dept. 
         description: | # this will include new lines to allow paragraphs
