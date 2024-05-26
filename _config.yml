@@ -183,7 +183,7 @@ content:
         caption: 2021 - Present
         sub_title: | #
           PhD Civil Engineering  
-          
+          <br>
           (Water Resources)
         # quote: >
         #   Established in 18xx. More history about the dept. 
@@ -193,9 +193,9 @@ content:
         title: Indian Institute of Technology, Gandhinagar
         caption: 2016 - 2020
         sub_title: | #
-          Bachelor of Technology  
+          >Bachelor of Technology  
           
-          Civil Engineering
+          >Civil Engineering
         # quote: >
         #   Established in 18xx. More history about the dept. 
         description: | # this will include new lines to allow paragraphs
