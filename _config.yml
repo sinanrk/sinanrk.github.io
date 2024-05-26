@@ -181,17 +181,18 @@ content:
       - layout: left
         title: University of Nebraska-Lincoln
         caption: 2021 - Present
-        sub_title: PhD Civil Engineering (Water Resources)
+        sub_title: | PhD Civil Engineering 
+        (Water Resources)
         # quote: >
         #   Established in 18xx. More history about the dept. 
         description: | # this will include new lines to allow paragraphs
           Research is the main thing. Some badminton too.
       - layout: left
-        title: Indian Institude of Technology, Gandhinagar
+        title: Indian Institute of Technology, Gandhinagar
         caption: 2016 - 2020
         sub_title: Bachelor of Technology, Civil Engineering
-        # quote: >
-        #   Established in 18xx. More history about the dept. 
+        quote: >
+          Established in 18xx. More history about the dept. 
         description: | # this will include new lines to allow paragraphs
           Pitching time. Had fun playing football (I mean soccer)
 
