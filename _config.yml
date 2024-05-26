@@ -183,6 +183,7 @@ content:
         caption: 2021 - Present
         sub_title: | #
           PhD Civil Engineering  
+          
           (Water Resources)
         # quote: >
         #   Established in 18xx. More history about the dept. 
@@ -191,9 +192,12 @@ content:
       - layout: left
         title: Indian Institute of Technology, Gandhinagar
         caption: 2016 - 2020
-        sub_title: Bachelor of Technology, Civil Engineering
-        quote: >
-          Established in 18xx. More history about the dept. 
+        sub_title: | #
+          Bachelor of Technology  
+          
+          Civil Engineering
+        # quote: >
+        #   Established in 18xx. More history about the dept. 
         description: | # this will include new lines to allow paragraphs
           Pitching time. Had fun playing football (I mean soccer)
 
