@@ -49,7 +49,7 @@ googlescholar_username: qrAUhPQAAAAJ
 # about_title: About Me
 about_profile_image: images/ProfilePic.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Hi, my name's Sinan and I'm a PhD student working on ML in Hydrology. 
+  Hi, I'm Sinan. If you enjoy garlic naan, my name should be easy to remember! I'm a PhD student specializing in Machine Learning applications in Hydrology. 
 
 #I am most skilled in: <mark>AWS</mark> and <mark>Eating Pizza</mark>
 
@@ -188,13 +188,17 @@ content:
         # quote: >
         #   Established in 18xx. More history about the dept. 
         description: | # this will include new lines to allow paragraphs
-          Research is the main thing. Some badminton too.
+          Research is the main thing. Some badminton too. 
+
+          Visit our lab website [here](https://roy.unl.edu)
       - layout: left
-        title: Indian Institute of Technology, Gandhinagar
+        title: | #
+          Indian Institute of Technology  
+          <br>
+          Gandhinagar
         caption: 2016 - 2020
         sub_title: | #
           >Bachelor of Technology  
-          
           >Civil Engineering
         # quote: >
         #   Established in 18xx. More history about the dept. 
