@@ -181,8 +181,9 @@ content:
       - layout: left
         title: University of Nebraska-Lincoln
         caption: 2021 - Present
-        sub_title: | PhD Civil Engineering 
-        (Water Resources)
+        sub_title: | #
+          PhD Civil Engineering  
+          (Water Resources)
         # quote: >
         #   Established in 18xx. More history about the dept. 
         description: | # this will include new lines to allow paragraphs
