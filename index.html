@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Sinan RK - Research Scientist</title>
+    <title>Sinan Rasiya Koya - Research Scientist</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -11,7 +11,7 @@
 <body>
     <header>
         <nav>
-            <div class="logo">Dr. Sinan RK</div>
+            <div class="logo">Sinan Rasiya Koya</div>
             <div class="social-links-header">
                 <a href="mailto:research@example.com" title="Email"><i class="fas fa-envelope"></i></a>
                 <a href="https://scholar.google.com" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
@@ -34,11 +34,11 @@
         <section id="home" class="hero">
             <div class="hero-content">
                 <div class="profile-image">
-                    <img src="profile.jpg" alt="Dr. Sinan RK">
+                    <img src="profile.jpg" alt="Sinan Rasiya Koya">
                 </div>
-                <h1>Dr. Sinan RK</h1>
-                <p class="subtitle">Research Scientist | Data Science | Machine Learning</p>
-                <p class="description">Exploring the intersection of artificial intelligence and scientific discovery</p>
+                <h1>Sinan Rasiya Koya</h1>
+                <p class="subtitle">Research Scientist | AI in Hydrology | Machine Learning</p>
+                <p class="description">Exploring the intersection of artificial intelligence and earth science, with a focus on hydrological applications</p>
             </div>
         </section>
 
@@ -46,67 +46,38 @@
             <h2>Research Focus</h2>
             <div class="research-content">
                 <div class="research-area">
-                    <h3>Machine Learning in Science</h3>
-                    <p>Developing novel algorithms for scientific data analysis and pattern recognition.</p>
+                    <h3>AI in Hydrology</h3>
+                    <p>Developing machine learning models for hydrological prediction and water resource management.</p>
                 </div>
                 <div class="research-area">
-                    <h3>Computational Biology</h3>
-                    <p>Applying computational methods to understand complex biological systems.</p>
+                    <h3>Remote Sensing</h3>
+                    <p>Applying deep learning techniques to analyze satellite imagery for hydrological applications.</p>
                 </div>
                 <div class="research-area">
-                    <h3>Data-Driven Discovery</h3>
-                    <p>Leveraging large-scale data analysis to uncover new scientific insights.</p>
+                    <h3>Climate Modeling</h3>
+                    <p>Using AI to improve climate models and predict hydrological impacts of climate change.</p>
                 </div>
             </div>
         </section>
 
-        <section id="tutorials" class="tutorials">
+        <section id="tutorials" class="tutorials" style="display: none;">
             <h2>Jupyter Notebook Tutorials</h2>
-            <div class="tutorial-grid">
-                <div class="tutorial-card">
-                    <h3>Tutorial Title 1</h3>
-                    <p class="tutorial-description">Description of the tutorial and what readers will learn.</p>
-                    <a href="#" class="tutorial-link">View Notebook</a>
-                </div>
-                <div class="tutorial-card">
-                    <h3>Tutorial Title 2</h3>
-                    <p class="tutorial-description">Description of the tutorial and what readers will learn.</p>
-                    <a href="#" class="tutorial-link">View Notebook</a>
-                </div>
+            <div class="tutorial-grid" id="tutorial-container">
+                <!-- Tutorials will be loaded dynamically -->
             </div>
         </section>
 
-        <section id="blog" class="blog">
+        <section id="blog" class="blog" style="display: none;">
             <h2>Research Blog</h2>
-            <div class="blog-grid">
-                <div class="blog-card">
-                    <h3>Blog Post Title 1</h3>
-                    <p class="blog-date">March 15, 2024</p>
-                    <p class="blog-excerpt">Brief excerpt from the blog post...</p>
-                    <a href="#" class="blog-link">Read More</a>
-                </div>
-                <div class="blog-card">
-                    <h3>Blog Post Title 2</h3>
-                    <p class="blog-date">March 10, 2024</p>
-                    <p class="blog-excerpt">Brief excerpt from the blog post...</p>
-                    <a href="#" class="blog-link">Read More</a>
-                </div>
+            <div class="blog-grid" id="blog-container">
+                <!-- Blog posts will be loaded dynamically -->
             </div>
         </section>
 
         <section id="publications" class="publications">
             <h2>Selected Publications</h2>
-            <div class="publication-list">
-                <div class="publication">
-                    <h3>Title of Publication 1</h3>
-                    <p class="journal">Journal of Scientific Research, 2023</p>
-                    <a href="#" class="paper-link">Read Paper</a>
-                </div>
-                <div class="publication">
-                    <h3>Title of Publication 2</h3>
-                    <p class="journal">Nature Scientific Reports, 2022</p>
-                    <a href="#" class="paper-link">Read Paper</a>
-                </div>
+            <div class="publication-list" id="publication-container">
+                <!-- Publications will be loaded dynamically -->
             </div>
         </section>
 
@@ -122,7 +93,116 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 Dr. Sinan RK. All rights reserved.</p>
+        <p>&copy; 2024 Sinan Rasiya Koya. All rights reserved.</p>
     </footer>
+
+    <script>
+        // Function to load Jupyter notebooks
+        async function loadNotebooks() {
+            try {
+                const response = await fetch('assets/notebooks/');
+                if (!response.ok) {
+                    document.querySelector('.tutorials').style.display = 'none';
+                    return;
+                }
+                
+                const files = await response.json();
+                if (files.length === 0) {
+                    document.querySelector('.tutorials').style.display = 'none';
+                    return;
+                }
+
+                const container = document.getElementById('tutorial-container');
+                files.forEach(file => {
+                    if (file.endsWith('.ipynb')) {
+                        const card = document.createElement('div');
+                        card.className = 'tutorial-card';
+                        card.innerHTML = `
+                            <h3>${file.replace('.ipynb', '')}</h3>
+                            <a href="assets/notebooks/${file}" class="tutorial-link">View Notebook</a>
+                        `;
+                        container.appendChild(card);
+                    }
+                });
+                document.querySelector('.tutorials').style.display = 'block';
+            } catch (error) {
+                document.querySelector('.tutorials').style.display = 'none';
+            }
+        }
+
+        // Function to load blog posts
+        async function loadBlogs() {
+            try {
+                const response = await fetch('assets/blogs/');
+                if (!response.ok) {
+                    document.querySelector('.blog').style.display = 'none';
+                    return;
+                }
+                
+                const files = await response.json();
+                if (files.length === 0) {
+                    document.querySelector('.blog').style.display = 'none';
+                    return;
+                }
+
+                const container = document.getElementById('blog-container');
+                files.forEach(file => {
+                    if (file.endsWith('.txt')) {
+                        const card = document.createElement('div');
+                        card.className = 'blog-card';
+                        card.innerHTML = `
+                            <h3>${file.replace('.txt', '')}</h3>
+                            <a href="assets/blogs/${file}" class="blog-link">Read More</a>
+                        `;
+                        container.appendChild(card);
+                    }
+                });
+                document.querySelector('.blog').style.display = 'block';
+            } catch (error) {
+                document.querySelector('.blog').style.display = 'none';
+            }
+        }
+
+        // Function to load publications
+        async function loadPublications() {
+            try {
+                const response = await fetch('assets/publications/publications.bib');
+                if (!response.ok) {
+                    return;
+                }
+                
+                const bibtex = await response.text();
+                const entries = bibtex.split('@');
+                const container = document.getElementById('publication-container');
+                
+                entries.forEach(entry => {
+                    if (entry.trim()) {
+                        const lines = entry.split('\n');
+                        const title = lines.find(line => line.includes('title = {'))?.split('{')[1].split('}')[0] || 'Untitled';
+                        const journal = lines.find(line => line.includes('journal = {'))?.split('{')[1].split('}')[0] || '';
+                        const year = lines.find(line => line.includes('year = {'))?.split('{')[1].split('}')[0] || '';
+                        
+                        const pub = document.createElement('div');
+                        pub.className = 'publication';
+                        pub.innerHTML = `
+                            <h3>${title}</h3>
+                            <p class="journal">${journal}, ${year}</p>
+                            <a href="#" class="paper-link">Read Paper</a>
+                        `;
+                        container.appendChild(pub);
+                    }
+                });
+            } catch (error) {
+                console.error('Error loading publications:', error);
+            }
+        }
+
+        // Load all content when the page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            loadNotebooks();
+            loadBlogs();
+            loadPublications();
+        });
+    </script>
 </body>
 </html> 
