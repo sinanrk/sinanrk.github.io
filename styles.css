@@ -83,7 +83,7 @@ nav {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: linear-gradient(135deg, #566573 0%, #2c3e50 100%);
+    background: linear-gradient(135deg, #566573 0%, #566573 100%);
     padding: 0 1rem;
 }
 
@@ -127,7 +127,7 @@ nav {
 
 /* Research Section */
 .research {
-    background-color: #2c3e50;
+    background-color: #566573;
     padding: 8rem 1rem;
 }
 
@@ -141,10 +141,10 @@ nav {
 
 .research-area {
     padding: 2rem;
-    border: 1px solid #34495e;
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 4px;
     transition: transform 0.3s ease;
-    background-color: #34495e;
+    background-color: rgba(255, 255, 255, 0.05);
 }
 
 .research-area:hover {
@@ -167,7 +167,7 @@ nav {
 /* Tutorials Section */
 .tutorials {
     padding: 8rem 1rem;
-    background-color: #2c3e50;
+    background-color: #566573;
 }
 
 .tutorial-grid {
@@ -179,12 +179,12 @@ nav {
 }
 
 .tutorial-card {
-    background-color: #34495e;
+    background-color: rgba(255, 255, 255, 0.05);
     padding: 2rem;
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
-    border: 1px solid #34495e;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .tutorial-card:hover {
@@ -211,7 +211,7 @@ nav {
 /* Blog Section */
 .blog {
     padding: 8rem 1rem;
-    background-color: #2c3e50;
+    background-color: #566573;
 }
 
 .blog-grid {
@@ -223,11 +223,11 @@ nav {
 }
 
 .blog-card {
-    background-color: #34495e;
+    background-color: rgba(255, 255, 255, 0.05);
     padding: 2rem;
     border-radius: 4px;
     transition: transform 0.3s ease;
-    border: 1px solid #34495e;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .blog-card:hover {
@@ -260,7 +260,7 @@ nav {
 /* Publications Section */
 .publications {
     padding: 8rem 1rem;
-    background-color: #2c3e50;
+    background-color: #566573;
 }
 
 .publication-list {
@@ -269,12 +269,12 @@ nav {
 }
 
 .publication {
-    background-color: #34495e;
+    background-color: rgba(255, 255, 255, 0.05);
     margin-bottom: 2rem;
     padding: 2rem;
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    border: 1px solid #34495e;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .publication:hover {
@@ -307,7 +307,7 @@ nav {
 
 /* Contact Section */
 .contact {
-    background-color: #2c3e50;
+    background-color: #566573;
     padding: 8rem 1rem;
 }
 
@@ -335,9 +335,10 @@ nav {
 footer {
     text-align: center;
     padding: 2rem;
-    background-color: #34495e;
+    background-color: #566573;
     color: #ffffff;
     font-size: 0.9rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* Responsive Design */
