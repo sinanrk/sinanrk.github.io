@@ -9,12 +9,12 @@ body {
     font-family: 'JetBrains Mono', 'Fira Code', monospace;
     line-height: 1.6;
     color: #ffffff;
-    background-color: #566573;
+    background: linear-gradient(135deg, #1a4b6e 0%, #2c7da0 100%);
 }
 
 /* Header and Navigation */
 header {
-    background-color: rgba(86, 101, 115, 0.95);
+    background-color: rgba(26, 75, 110, 0.95);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
     position: fixed;
     width: 100%;
@@ -83,8 +83,40 @@ nav {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: linear-gradient(135deg, #566573 0%, #566573 100%);
+    background: linear-gradient(rgba(26, 75, 110, 0.9), rgba(44, 125, 160, 0.9)), url('images/river-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     padding: 0 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(26, 75, 110, 0.95) 0%, rgba(44, 125, 160, 0.85) 100%);
+    z-index: 1;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 150px;
+    background: linear-gradient(to top, rgba(26, 75, 110, 1), transparent);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
 }
 
 .profile-image {
@@ -127,8 +159,20 @@ nav {
 
 /* Research Section */
 .research {
-    background-color: #566573;
+    background: linear-gradient(135deg, #1a4b6e 0%, #2c7da0 100%);
     padding: 8rem 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.research::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: linear-gradient(to bottom, rgba(26, 75, 110, 1), transparent);
 }
 
 .research-content {
@@ -142,14 +186,16 @@ nav {
 .research-area {
     padding: 2rem;
     border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 4px;
-    transition: transform 0.3s ease;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
 }
 
 .research-area:hover {
     transform: translateY(-5px);
-    border-color: #3498db;
+    border-color: #4a9cd4;
+    box-shadow: 0 5px 15px rgba(74, 156, 212, 0.2);
 }
 
 .research-area h3 {
@@ -167,7 +213,8 @@ nav {
 /* Tutorials Section */
 .tutorials {
     padding: 8rem 1rem;
-    background-color: #566573;
+    background: linear-gradient(135deg, #1a4b6e 0%, #2c7da0 100%);
+    position: relative;
 }
 
 .tutorial-grid {
@@ -181,15 +228,17 @@ nav {
 .tutorial-card {
     background-color: rgba(255, 255, 255, 0.05);
     padding: 2rem;
-    border-radius: 4px;
+    border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
 }
 
 .tutorial-card:hover {
     transform: translateY(-5px);
-    border-color: #3498db;
+    border-color: #4a9cd4;
+    box-shadow: 0 5px 15px rgba(74, 156, 212, 0.2);
 }
 
 .tutorial-description {
@@ -211,7 +260,8 @@ nav {
 /* Blog Section */
 .blog {
     padding: 8rem 1rem;
-    background-color: #566573;
+    background: linear-gradient(135deg, #1a4b6e 0%, #2c7da0 100%);
+    position: relative;
 }
 
 .blog-grid {
@@ -225,14 +275,16 @@ nav {
 .blog-card {
     background-color: rgba(255, 255, 255, 0.05);
     padding: 2rem;
-    border-radius: 4px;
-    transition: transform 0.3s ease;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
 }
 
 .blog-card:hover {
     transform: translateY(-5px);
-    border-color: #3498db;
+    border-color: #4a9cd4;
+    box-shadow: 0 5px 15px rgba(74, 156, 212, 0.2);
 }
 
 .blog-date {
@@ -260,7 +312,8 @@ nav {
 /* Publications Section */
 .publications {
     padding: 8rem 1rem;
-    background-color: #566573;
+    background: linear-gradient(135deg, #1a4b6e 0%, #2c7da0 100%);
+    position: relative;
 }
 
 .publication-list {
@@ -272,13 +325,17 @@ nav {
     background-color: rgba(255, 255, 255, 0.05);
     margin-bottom: 2rem;
     padding: 2rem;
-    border-radius: 4px;
+    border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .publication:hover {
-    border-color: #3498db;
+    transform: translateY(-5px);
+    border-color: #4a9cd4;
+    box-shadow: 0 5px 15px rgba(74, 156, 212, 0.2);
 }
 
 .publication h3 {
@@ -307,8 +364,19 @@ nav {
 
 /* Contact Section */
 .contact {
-    background-color: #566573;
+    background: linear-gradient(135deg, #1a4b6e 0%, #2c7da0 100%);
     padding: 8rem 1rem;
+    position: relative;
+}
+
+.contact::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: linear-gradient(to top, rgba(26, 75, 110, 1), transparent);
 }
 
 .contact-content {
@@ -335,7 +403,7 @@ nav {
 footer {
     text-align: center;
     padding: 2rem;
-    background-color: #566573;
+    background-color: #1a4b6e;
     color: #ffffff;
     font-size: 0.9rem;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
