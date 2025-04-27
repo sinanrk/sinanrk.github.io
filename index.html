@@ -4,250 +4,370 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sinan Rasiya Koya</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">Sinan Rasiya Koya</div>
-            <div class="social-links-header">
-                <a href="mailto:research@example.com" title="Email"><i class="fas fa-envelope"></i></a>
-                <a href="https://scholar.google.com" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
-                <a href="https://linkedin.com/in/sinanrk" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/sinanrk" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                <a href="cv.pdf" target="_blank" title="CV"><i class="fas fa-file-alt"></i></a>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#research">Research</a></li>
-                <li id="tutorials-nav"><a href="#tutorials">Tutorials</a></li>
-                <li id="blog-nav"><a href="#blog">Blog</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav>
+        <ul>
+            <li><a onclick="showSection('about')">About</a></li>
+            <li><a onclick="showSection('publications')">Publications</a></li>
+            <li><a onclick="showSection('tutorials')">Tutorials</a></li>
+            <li><a onclick="showSection('thoughts')">Thoughts</a></li>
+            <li><a onclick="showSection('contact')">Contact</a></li>
+        </ul>
+    </nav>
 
     <main>
-        <section id="home" class="hero">
-            <div class="hero-content">
-                <div class="profile-image">
-                    <img src="images/ProfilePic.jpg" alt="Sinan Rasiya Koya">
-                </div>
-                <h1>Sinan Rasiya Koya</h1>
-                <p class="subtitle">Research Scientist | AI in Hydrology | Machine Learning</p>
-                <p class="description">Exploring the intersection of artificial intelligence and earth science, with a focus on hydrological applications</p>
-            </div>
-        </section>
+        <div id="about" class="section active">
+            <h1>Sinan Rasiya Koya</h1>
+            <p>
+                Thank you for visiting my website! <br>
+                I'm Sinan (if you enjoy garlic naan, my name should be easy to remember!). Haven't 
+                you intrigued by the Earth's marvels around? it's geological features, climate, and ecosystems?
+                I am! 
+                <br><br>
 
-        <section id="research" class="research">
-            <h2>Research Focus</h2>
-            <div class="research-content">
-                <div class="research-area">
-                    <h3>AI in Hydrology</h3>
-                    <p>Developing machine learning models for hydrological prediction and water resource management.</p>
+                This enthusiasm led me to pursue a PhD focusing on Hydrology. It all started from 
+                he Indian Institute of Technology, Gandhinagar where I recieved a bachelor degree 
+                in Civil Engineering. Currently, I'm a PhD student at the University of Nebraska-Lincoln, 
+                where I am exploring Artificial Intelligence (AI) and Deep Learning applications in 
+                hydrology. I study the hydrological extremes, like floods and droughts, and ways to improve 
+                predicting them using AI. Over the past few years, I focused on snow-induced floods, and 
+                droughts.
+                <br><br>
+
+                Outside of academia, I enjoy playing badminton and soccer. I am a philomath - learning new 
+                things brings me joy. You can learn more about me from links below. 
+                <!-- Feel free to ping me through 
+                <a href="mailto:ssinanrk2@huskers.unl.edu"><span class="underline">email</span></a>
+                if you'd like to discuss anything.  -->
+                <br><br>
+            </p>
+
+            <a href="https://github.com/sinanrk" target="_blank" title="GitHub" style="margin-right: 20px;">
+                <i class="fab fa-github"></i>
+            </a>    
+            <a href="https://www.linkedin.com/in/sinanrasiyakoya" target="_blank" title="LinkedIn" style="margin-right: 20px;">
+                <i class="fab fa-linkedin"></i>
+            </a>    
+            <a href="https://scholar.google.com/citations?user=qrAUhPQAAAAJ&hl=en" target="_blank" title="Google Scholar" style="margin-right: 20px;">
+                <i class="fas fa-graduation-cap"></i>
+            </a>    
+            <a href="assets/CV_RasiyaKoya_Sinan.pdf" target="_blank" title="Download CV">
+                <i class="fas fa-file-alt"></i>
+            </a>        
+  
+        </div>
+
+        <div id="publications" class="section">
+            <h2>Publications</h2>
+            <div class="publications-container">
+                <a href="https://scholar.google.com/citations?user=qrAUhPQAAAAJ&hl=en" target="_blank" title="Google Scholar">
+                    <i class="fas fa-graduation-cap"></i> Google Scholar
+                </a>
+                <div class="publication-year-group">
+                    <div class="publication-year">2024</div>
+                    <div class="publications-list">
+                        <div class="publication">
+                            <div class="publication-title">Temporal fusion transformers for streamflow prediction: Value of combining attention with recurrence</div>
+                            <div class="publication-authors">Sinan Rasiya Koya and Tirthankar Roy</div>
+                            <div class="publication-journal">Journal of Hydrology</div>
+                            <div class="publication-links">
+                                <a href="https://doi.org/10.1016/j.jhydrol.2024.131301" class="publication-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Read here
+                                </a>
+                                <a href="https://github.com/sinanrk/TFT-streamflow.git" class="publication-link" target="_blank">
+                                    <i class="fab fa-github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="publication">
+                            <div class="publication-title">Northern Pacific sea-level pressure controls rain-on-snow in North America</div>
+                            <div class="publication-authors">Sinan Rasiya Koya, Kanak Kanti Kar, and Tirthankar Roy</div>
+                            <div class="publication-journal">Communications Earth & Environment</div>
+                            <div class="publication-links">
+                                <a href="https://doi.org/10.1038/s43247-024-01431-6" class="publication-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Read here
+                                </a>
+                                <a href="https://doi.org/10.5281/zenodo.10956960" class="publication-link" target="_blank">
+                                    <i class="fas fa-database"></i> Data & Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="research-area">
-                    <h3>Remote Sensing</h3>
-                    <p>Applying deep learning techniques to analyze satellite imagery for hydrological applications.</p>
+
+                <div class="publication-year-group">
+                    <div class="publication-year">2023</div>
+                    <div class="publications-list">
+                        <div class="publication">
+                            <div class="publication-title">An autoencoder-based snow drought index</div>
+                            <div class="publication-authors">Sinan Rasiya Koya, Kanak Kanti Kar, Shivendra Srivastava, Tsegaye Tadesse, Mark Svoboda, and Tirthankar Roy</div>
+                            <div class="publication-journal">Scientific Reports</div>
+                            <div class="publication-links">
+                                <a href="https://doi.org/10.1038/s41598-023-47999-5" class="publication-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Read here
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="publication">
+                            <div class="publication-title">Applicability of a flood forecasting system for Nebraska watersheds</div>
+                            <div class="publication-authors">Sinan Rasiya Koya, Nicolas Velasquez Giron, Marcela Rojas, Ricardo Mantilla, Kirk Harvey, Daniel Ceynar, Felipe Quintero, Witold F. Krajewski, and Tirthankar Roy</div>
+                            <div class="publication-journal">Environmental Modelling & Software</div>
+                            <div class="publication-links">
+                                <a href="https://doi.org/10.1016/j.envsoft.2023.105693" class="publication-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Read here
+                                </a>
+                                <a href="https://github.com/sinanrk/asynch/tree/HLM-PSnow#" class="publication-link" target="_blank">
+                                    <i class="fab fa-github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="publication">
+                            <div class="publication-title">Snow-detonated floods: Assessment of the US midwest march 2019 event</div>
+                            <div class="publication-authors">Nicolás Velásquez, Felipe Quintero, Sinan Rasiya Koya, Tirthankar Roy, and Ricardo Mantilla</div>
+                            <div class="publication-journal">Journal of Hydrology: Regional Studies</div>
+                            <div class="publication-links">
+                                <a href="https://doi.org/10.1016/j.ejrh.2023.101387" class="publication-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Read here
+                                </a>
+                            </div>
+                        </div>
+
+                        
+                    </div>
                 </div>
-                <div class="research-area">
-                    <h3>Climate Modeling</h3>
-                    <p>Using AI to improve climate models and predict hydrological impacts of climate change.</p>
+
+                <div class="publication-year-group">
+                    <div class="publication-year">2022</div>
+                    <div class="publications-list">
+                        <div class="publication">
+                            <div class="publication-title">The Great Lakes Runoff Intercomparison Project Phase 4: the Great Lakes (GRIP-GL)</div>
+                            <div class="publication-authors">Juliane Mai, Hongren Shen, Bryan A. Tolson, Etienne
+                                Gaborit, Richard Arsenault, James R. Craig, Vincent Fortin, Lauren M. Fry, Martin Gauch, David
+                                Klotz, Frederik Kratzert, Nicole O'Brien, Daniel G. Princz, Sinan Rasiya Koya, Tirthankar Roy, Frank Seglenieks, Narayan K. Shrestha, Agnès G. T.
+                                Temgoua, Vincent Vionnet, and Jason W. Waddell</div>
+                            <div class="publication-journal">Hydrology and Earth System Sciences</div>
+                            <div class="publication-links">
+                                <a href="https://doi.org/10.5194/hess-26-3537-2022" class="publication-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Read here
+                                </a>
+                            </div>
+                        </div>
+                        <div class="publication">
+                            <div class="publication-title">Application of Neural Networks for Hydrologic Process Understanding at a Midwestern Watershed</div>
+                            <div class="publication-authors">Annushka Aliev, Sinan Rasiya Koya, Incheol Kim, Jongwan Eun, Elbert Traylor, and Tirthankar Roy</div>
+                            <div class="publication-journal">Hydrology</div>
+                            <div class="publication-links">
+                                <a href="https://doi.org/10.3390/hydrology10020027" class="publication-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Read here
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section id="tutorials" class="tutorials" style="display: none;">
-            <h2>Jupyter Notebook Tutorials</h2>
-            <div class="tutorial-grid" id="tutorial-container">
+        <div id="tutorials" class="section">
+            <h2>Tutorials</h2>
+            <div id="tutorials-list">
                 <!-- Tutorials will be loaded dynamically -->
             </div>
-        </section>
+        </div>
 
-        <section id="blog" class="blog" style="display: none;">
-            <h2>Research Blog</h2>
-            <div class="blog-grid" id="blog-container">
-                <!-- Blog posts will be loaded dynamically -->
+        <div id="thoughts" class="section">
+            <h2 class="thoughts-title">Thoughts</h2>
+            <div id="thoughts-list" class="thoughts-list">
+                <!-- Thoughts will be loaded dynamically -->
             </div>
-        </section>
+            <div id="thought-content" class="thought-content"></div>
+        </div>
 
-        <section id="publications" class="publications">
-            <h2>Selected Publications</h2>
-            <div class="publication-list" id="publication-container">
-                <!-- Publications will be loaded dynamically -->
-            </div>
-        </section>
-
-        <section id="contact" class="contact">
+        <div id="contact" class="section">
             <h2>Contact</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <p><i class="fas fa-envelope"></i> research@example.com</p>
-                    <p><i class="fas fa-map-marker-alt"></i> Research Institute, City</p>
-                </div>
+            <div class="social-links">
+                <a href="mailto:ssinanrk2@huskers.unl.edu" class="social-link">
+                    <i class="fas fa-envelope"></i>
+                    ssinanrk2@huskers.unl.edu
+                </a>
+                <a href="https://github.com/sinanrk" target="_blank" class="social-link">
+                    <i class="fab fa-github"></i>
+                    github.com/sinanrk
+                </a>
+                <a href="https://twitter.com/rk_sinan" target="_blank" class="social-link">
+                    <i class="fab fa-twitter"></i>
+                    twitter.com/rk_sinan
+                </a>
+                <a href="https://linkedin.com/in/sinanrasiyakoya" target="_blank" class="social-link">
+                    <i class="fab fa-linkedin"></i>
+                    linkedin.com/in/sinanrasiyakoya
+                </a>
+                <br>
+                <p>
+                    Besides my research topics, I enjoy discussing anything related to science 
+                    and philosophy. If you value such discussions, fell free ping me through email. 
+                    Even if not, I'd still be happy to connect - Who knows, We might end up 
+                    doing something good for the world.
+                </p>
+                    scroll down if you'd like to see how I look!
+                    <br>
+                    <div style="height: 1500px;"></div>
+                    Cheeezz....
+                    <img src="assets/images/ProfilePic2.jpg" alt="Sinan Rasiya Koya" style="width: 50%; border-radius: 50%; object-fit: cover; display: block; margin-right: auto; margin-left: 0;">
+                
             </div>
-        </section>
+        </div>
     </main>
 
-    <footer>
-        <p>&copy; 2024 Sinan Rasiya Koya. All rights reserved.</p>
-    </footer>
-
     <script>
-        // Function to check if a directory has files
-        async function hasFiles(directory) {
-            try {
-                const response = await fetch(directory);
-                if (!response.ok) return false;
-                const files = await response.json();
-                return files.length > 0;
-            } catch (error) {
-                console.error(`Error checking ${directory}:`, error);
-                return false;
+        function showSection(sectionId) {
+            // Create and show transition bar
+            const bar = document.createElement('div');
+            bar.className = 'transition-bar';
+            document.body.appendChild(bar);
+
+            // Animate bar with random segments
+            let width = 0;
+            const segments = Math.floor(Math.random() * 3) + 3; // 3-5 segments
+            const segmentWidth = 100 / segments;
+            
+            const animateBar = () => {
+                if (width < 100) {
+                    width += segmentWidth;
+                    bar.style.width = width + '%';
+                    setTimeout(animateBar, Math.random() * 200 + 100); // Random delay between 100-300ms
+                } else {
+                    bar.remove();
+                }
+            };
+            
+            animateBar();
+
+            // Hide all sections
+            document.querySelectorAll('.section').forEach(section => {
+                section.classList.remove('active');
+            });
+            
+            // Remove active class from all nav links
+            document.querySelectorAll('nav a').forEach(link => {
+                link.classList.remove('active');
+            });
+            
+            // Show the selected section
+            document.getElementById(sectionId).classList.add('active');
+            
+            // Add active class to the clicked nav link
+            document.querySelector(`nav a[onclick="showSection('${sectionId}')"]`).classList.add('active');
+
+            // If showing thoughts section, reset to thoughts list
+            if (sectionId === 'thoughts') {
+                document.getElementById('thoughts-list').classList.remove('hidden');
+                document.getElementById('thought-content').classList.remove('active');
+                document.querySelector('.thoughts-title').classList.remove('hidden');
             }
         }
 
-        // Function to load Jupyter notebooks
-        async function loadNotebooks() {
-            const tutorialsSection = document.getElementById('tutorials');
-            const tutorialsNav = document.getElementById('tutorials-nav');
-            const hasNotebooks = await hasFiles('assets/notebooks/');
+        function showThought(thoughtId) {
+            // Hide thoughts list and title
+            document.getElementById('thoughts-list').classList.add('hidden');
+            document.querySelector('.thoughts-title').classList.add('hidden');
             
-            if (!hasNotebooks) {
-                tutorialsSection.style.display = 'none';
-                tutorialsNav.style.display = 'none';
-                return;
-            }
-
-            try {
-                const response = await fetch('assets/notebooks/');
-                const files = await response.json();
-                const tutorialGrid = document.getElementById('tutorial-container');
-                
-                files.forEach(file => {
-                    if (file.name.endsWith('.ipynb')) {
-                        const tutorialCard = document.createElement('div');
-                        tutorialCard.className = 'tutorial-card';
-                        tutorialCard.innerHTML = `
-                            <h3>${file.name.replace('.ipynb', '')}</h3>
-                            <p class="tutorial-description">Jupyter Notebook Tutorial</p>
-                            <a href="${file.download_url}" class="tutorial-link" target="_blank">View Tutorial</a>
-                        `;
-                        tutorialGrid.appendChild(tutorialCard);
-                    }
+            // Load and show thought content
+            fetch(`assets/blogs/${thoughtId}.html`)
+                .then(response => response.text())
+                .then(html => {
+                    const parser = new DOMParser();
+                    const doc = parser.parseFromString(html, 'text/html');
+                    const content = doc.querySelector('.thought-content');
+                    const date = doc.querySelector('.thought-date').textContent;
+                    
+                    // Update the date in the list view
+                    const thoughtTitle = document.querySelector(`.thought-title[onclick="showThought('${thoughtId}')"]`);
+                    const dateSpan = thoughtTitle.querySelector('.thought-date');
+                    dateSpan.textContent = date;
+                    
+                    document.getElementById('thought-content').innerHTML = content.innerHTML;
+                    document.getElementById('thought-content').classList.add('active');
                 });
-            } catch (error) {
-                console.error('Error loading notebooks:', error);
-                tutorialsSection.style.display = 'none';
-                tutorialsNav.style.display = 'none';
-            }
         }
 
-        // Function to load blog posts
-        async function loadBlogs() {
-            const blogSection = document.getElementById('blog');
-            const blogNav = document.getElementById('blog-nav');
-            const hasBlogs = await hasFiles('assets/blogs/');
-            
-            if (!hasBlogs) {
-                blogSection.style.display = 'none';
-                blogNav.style.display = 'none';
-                return;
-            }
-
-            try {
-                const response = await fetch('assets/blogs/');
-                const files = await response.json();
-                const blogGrid = document.getElementById('blog-container');
-                
-                files.forEach(file => {
-                    if (file.name.endsWith('.txt')) {
-                        const blogCard = document.createElement('div');
-                        blogCard.className = 'blog-card';
-                        blogCard.innerHTML = `
-                            <h3>${file.name.replace('.txt', '')}</h3>
-                            <p class="blog-date">Loading...</p>
-                            <p class="blog-excerpt">Loading content...</p>
-                            <a href="${file.download_url}" class="blog-link">Read More</a>
-                        `;
-                        blogGrid.appendChild(blogCard);
-
-                        // Load blog content
-                        fetch(file.download_url)
+        // Load thoughts when the page loads
+        window.addEventListener('load', () => {
+            // First, load all thought files
+            fetch('assets/blogs/')
+                .then(response => response.text())
+                .then(html => {
+                    const parser = new DOMParser();
+                    const doc = parser.parseFromString(html, 'text/html');
+                    const links = Array.from(doc.querySelectorAll('a'))
+                        .filter(a => a.href.endsWith('.html'))
+                        .map(a => a.href.split('/').pop().replace('.html', ''));
+                    
+                    // Create thought elements
+                    const thoughtsList = document.getElementById('thoughts-list');
+                    links.forEach(thoughtId => {
+                        fetch(`assets/blogs/${thoughtId}.html`)
                             .then(response => response.text())
-                            .then(content => {
-                                const lines = content.split('\n');
-                                const date = lines[0];
-                                const excerpt = lines.slice(1, 3).join(' ');
-                                blogCard.querySelector('.blog-date').textContent = date;
-                                blogCard.querySelector('.blog-excerpt').textContent = excerpt;
+                            .then(html => {
+                                const parser = new DOMParser();
+                                const doc = parser.parseFromString(html, 'text/html');
+                                const title = doc.querySelector('h1').textContent;
+                                const date = doc.querySelector('.thought-date').textContent;
+                                
+                                const thoughtDiv = document.createElement('div');
+                                thoughtDiv.className = 'thought';
+                                thoughtDiv.innerHTML = `
+                                    <div class="thought-title" onclick="showThought('${thoughtId}')">
+                                        <span class="thought-title-content">${title}</span>
+                                        <span class="thought-date">${date}</span>
+                                    </div>
+                                `;
+                                thoughtsList.appendChild(thoughtDiv);
                             });
-                    }
+                    });
                 });
-            } catch (error) {
-                console.error('Error loading blogs:', error);
-                blogSection.style.display = 'none';
-                blogNav.style.display = 'none';
-            }
-        }
+        });
 
-        // Function to load publications
-        async function loadPublications() {
-            try {
-                const response = await fetch('assets/publications/publications.bib');
-                const bibtex = await response.text();
-                const publicationList = document.getElementById('publication-container');
-                
-                // Simple BibTeX parser
-                const entries = bibtex.split('@');
-                entries.forEach(entry => {
-                    if (entry.trim()) {
-                        const lines = entry.split('\n');
-                        const type = lines[0].split('{')[0].trim();
-                        const citationKey = lines[0].split('{')[1].split(',')[0];
-                        
-                        let title = '';
-                        let journal = '';
-                        let year = '';
-                        let url = '';
-                        
-                        lines.forEach(line => {
-                            if (line.includes('title = {')) {
-                                title = line.split('{')[1].split('}')[0];
-                            } else if (line.includes('journal = {')) {
-                                journal = line.split('{')[1].split('}')[0];
-                            } else if (line.includes('year = {')) {
-                                year = line.split('{')[1].split('}')[0];
-                            } else if (line.includes('url = {')) {
-                                url = line.split('{')[1].split('}')[0];
-                            }
-                        });
-                        
-                        if (title) {
-                            const publication = document.createElement('div');
-                            publication.className = 'publication';
-                            publication.innerHTML = `
-                                <h3>${title}</h3>
-                                <p class="journal">${journal} (${year})</p>
-                                ${url ? `<a href="${url}" class="paper-link" target="_blank">View Paper</a>` : ''}
-                            `;
-                            publicationList.appendChild(publication);
-                        }
-                    }
+        // Load tutorials when the page loads
+        window.addEventListener('load', () => {
+            // First, load all tutorial files
+            fetch('assets/notebooks/')
+                .then(response => response.text())
+                .then(html => {
+                    const parser = new DOMParser();
+                    const doc = parser.parseFromString(html, 'text/html');
+                    const links = Array.from(doc.querySelectorAll('a'))
+                        .filter(a => a.href.endsWith('.html'))
+                        .map(a => a.href.split('/').pop());
+
+                    // Create tutorial elements
+                    const tutorialsList = document.getElementById('tutorials-list');
+                    links.forEach(link => {
+                        const tutorialUrl = `assets/notebooks/${link}`;
+                        fetch(tutorialUrl)
+                            .then(response => response.text())
+                            .then(tutorialHtml => {
+                                const tutorialDoc = parser.parseFromString(tutorialHtml, 'text/html');
+                                const title = tutorialDoc.querySelector('title')?.textContent || link.replace('.html', '');
+
+                                const tutorialDiv = document.createElement('div');
+                                tutorialDiv.className = 'tutorial';
+                                tutorialDiv.innerHTML = `
+                                    <a href="${tutorialUrl}" class="tutorial-title" target="_blank">${title}</a>
+                                `;
+                                tutorialsList.appendChild(tutorialDiv);
+                            });
+                    });
                 });
-            } catch (error) {
-                console.error('Error loading publications:', error);
-            }
-        }
-
-        // Load all content when the page loads
-        document.addEventListener('DOMContentLoaded', () => {
-            loadNotebooks();
-            loadBlogs();
-            loadPublications();
         });
     </script>
 </body>
