@@ -318,6 +318,7 @@
                         fetch(`assets/blogs/${thoughtId}.html`)
                             .then(response => response.text())
                             .then(html => {
+                                console.log(`Loaded ${thoughtId}.html`)
                                 const parser = new DOMParser();
                                 const doc = parser.parseFromString(html, 'text/html');
                                 const title = doc.querySelector('h1').textContent;
