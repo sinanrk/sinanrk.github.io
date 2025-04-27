@@ -304,7 +304,7 @@
         window.addEventListener('load', () => {
             // First, load all thought files
             fetch('assets/blogs/manifest.json')
-                .then(response => response.text())
+                .then(response => response.json())
                 .then(html => {
                     const parser = new DOMParser();
                     const doc = parser.parseFromString(html, 'text/html');
@@ -326,7 +326,7 @@
                                 const thoughtDiv = document.createElement('div');
                                 thoughtDiv.className = 'thought';
                                 thoughtDiv.innerHTML = `
-                                    <div class="thought-title" onclick="showThought('${thoughtId}')">
+                                    <div class="thought-title" onclick="showThought('${thoughtId.replace('.html', '')}')">
                                         <span class="thought-title-content">${title}</span>
                                         <span class="thought-date">${date}</span>
                                     </div>
@@ -341,7 +341,7 @@
         window.addEventListener('load', () => {
             // First, load all tutorial files
             fetch('assets/notebooks/manifest.json')
-                .then(response => response.text())
+                .then(response => response.json())
                 .then(html => {
                     const parser = new DOMParser();
                     const doc = parser.parseFromString(html, 'text/html');
