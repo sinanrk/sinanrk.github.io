@@ -5,10 +5,10 @@ This is my personal website hosted on GitHub Pages, focusing on my research in A
 ## Setup Instructions
 
 1. Fork this repository
-2. Rename the repository to `sinanrk.github.io`
+2. Rename the repository to `yourname.github.io`
 3. Customize the content in `index.html` and `styles.css`
 4. Push your changes to the main branch
-5. Your website will be live at https://sinanrk.github.io
+5. Your website will be live at https://yourname.github.io
 
 ## Content Management
 
@@ -17,8 +17,9 @@ The website uses a dynamic content loading system with the following folder stru
 ```
 assets/
 ├── notebooks/     # Jupyter notebook tutorials
-├── blogs/         # Research blog posts
+├── blogs/         # Blog posts
 └── publications/  # BibTeX publications
+
 ```
 
 ### Adding Content
@@ -38,6 +39,13 @@ assets/
    - Add your publications in BibTeX format
    - The website will automatically parse and display your publications
 
+## TODO
+
+- No back button
+- Add transition effects/animation
+- Update the tutorials (notes now are placeholders)
+- Optimize the code, lot of jargons
+  
 ## Features
 
 - Responsive design
