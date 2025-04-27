@@ -1,6 +1,7 @@
 # Personal Website
 
 This is my personal website hosted on GitHub Pages, focusing on my research in AI and Hydrology.
+[UNDER PREPARATION]
 
 ## Setup Instructions
 
