@@ -282,7 +282,7 @@
             document.querySelector('.thoughts-title').classList.add('hidden');
             
             // Load and show thought content
-            fetch(`assets/blogs/${thoughtId}.html`)
+            fetch(`assets/blogs/${thoughtId}`)
                 .then(response => response.text())
                 .then(html => {
                     const parser = new DOMParser();
@@ -310,10 +310,10 @@
                     // Create thought elements
                     const thoughtsList = document.getElementById('thoughts-list');
                     links.forEach(thoughtId => {
-                        fetch(`assets/blogs/${thoughtId}.html`)
+                        fetch(`assets/blogs/${thoughtId}`)
                             .then(response => response.text())
                             .then(html => {
-                                console.log(`Loaded ${thoughtId}.html`); // Log each HTML file
+                                console.log(`Loaded ${thoughtId}`); // Log each HTML file
                                 const parser = new DOMParser();
                                 const doc = parser.parseFromString(html, 'text/html');
                                 const title = doc.querySelector('h1')?.textContent || 'No title'; // Use optional chaining to avoid errors
@@ -348,14 +348,11 @@
         window.addEventListener('load', () => {
             // First, load all tutorial files
             fetch('assets/notebooks/manifest.json')
-                .then(response => response.json())
-                .then(html => {
-                    const parser = new DOMParser();
-                    const doc = parser.parseFromString(html, 'text/html');
-                    const links = Array.from(doc.querySelectorAll('a'))
-                        .filter(a => a.href.endsWith('.html'))
-                        .map(a => a.href.split('/').pop());
-
+                .then(response => response.json())  // Parse as JSON directly
+                .then(data => {
+                    // The manifest is already parsed as a JSON object
+                    const links = data; // Assuming 'data' is an array of file names
+        
                     // Create tutorial elements
                     const tutorialsList = document.getElementById('tutorials-list');
                     links.forEach(link => {
@@ -363,17 +360,24 @@
                         fetch(tutorialUrl)
                             .then(response => response.text())
                             .then(tutorialHtml => {
+                                const parser = new DOMParser();
                                 const tutorialDoc = parser.parseFromString(tutorialHtml, 'text/html');
                                 const title = tutorialDoc.querySelector('title')?.textContent || link.replace('.html', '');
-
+        
                                 const tutorialDiv = document.createElement('div');
                                 tutorialDiv.className = 'tutorial';
                                 tutorialDiv.innerHTML = `
                                     <a href="${tutorialUrl}" class="tutorial-title" target="_blank">${title}</a>
                                 `;
                                 tutorialsList.appendChild(tutorialDiv);
+                            })
+                            .catch(error => {
+                                console.error(`Error loading tutorial: ${tutorialUrl}`, error);
                             });
                     });
+                })
+                .catch(error => {
+                    console.error('Error loading manifest:', error);
                 });
         });
     </script>
