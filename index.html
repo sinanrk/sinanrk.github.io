@@ -303,7 +303,7 @@
         // Load thoughts when the page loads
         window.addEventListener('load', () => {
             // First, load all thought files
-            fetch('assets/blogs/')
+            fetch('assets/blogs/manifest.json')
                 .then(response => response.text())
                 .then(html => {
                     const parser = new DOMParser();
@@ -340,7 +340,7 @@
         // Load tutorials when the page loads
         window.addEventListener('load', () => {
             // First, load all tutorial files
-            fetch('assets/notebooks/')
+            fetch('assets/notebooks/manifest.json')
                 .then(response => response.text())
                 .then(html => {
                     const parser = new DOMParser();
