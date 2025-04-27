@@ -269,7 +269,7 @@ h2 {
 }
 
 .thought-content {
-/*     display: none; */
+    display: none;
     margin-top: 1rem;
     padding: 1rem;
     background: #111;
