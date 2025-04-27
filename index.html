@@ -380,6 +380,15 @@
                     console.error('Error loading manifest:', error);
                 });
         });
+
+        // When page is loaded or restored (like going "back")
+        window.addEventListener('pageshow', () => {
+            // Find all thought-content divs and hide them
+            document.querySelectorAll('.thought-content').forEach(content => {
+                content.style.display = 'none';
+            });
+        });
+
     </script>
 </body>
 </html> 
