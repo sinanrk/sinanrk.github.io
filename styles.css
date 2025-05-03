@@ -1,6 +1,7 @@
 body {
     font-family: 'Space Grotesk', -apple-system, system-ui, sans-serif;
     line-height: 1.6;
+    flex-direction: row;
     margin: 0;
     color: #fff;
     background: #111;
@@ -46,6 +47,46 @@ a {
     transition: color 0.3s ease, text-decoration-color 0.3s ease;
 }
 
+main {
+    margin-left: 240px;
+    padding: 2rem;
+    max-width: 800px;
+    position: relative;
+    min-height: 100vh;
+    background: #111;
+}
+
+
+/* Mobile-friendly styles */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column; /* Stack navigation and content vertically */
+    }
+
+    nav {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    nav ul {
+        display: flex; /* Arrange items horizontally */
+        justify-content: center; /* Center the items horizontally */
+        gap: 1rem; /* Add spacing between items */
+        padding: 0;
+        margin: 0;
+    }
+
+    nav li {
+        margin-bottom: 0; /* Remove vertical spacing */
+    }
+
+    main {
+        margin-left: 0; /* Remove left margin */
+        padding-top: 1rem; /* Add spacing below the navigation bar */
+    }
+}
+
 a:hover {
     color: #fff;
 }
@@ -57,14 +98,7 @@ a.active {
     text-decoration-color: #999;
 }
 
-main {
-    margin-left: 240px;
-    padding: 2rem;
-    max-width: 800px;
-    position: relative;
-    min-height: 100vh;
-    background: #111;
-}
+
 
 h1, h2 {
     color: #fff;
@@ -190,6 +224,28 @@ h2 {
 
 .publication-link i {
     font-size: 1.1rem;
+}
+/* Mobile-friendly styles */
+@media (max-width: 768px) {
+    .publication-year {
+        flex: 0 0 auto; /* Allow it to shrink */
+        text-align: left; /* Align text to the left */
+        font-size: 1rem; /* Reduce font size for better fit */
+        padding-right: 1rem; /* Reduce padding */
+    }
+
+    .publication-year::after {
+        display: none; /* Hide the decorative line on mobile */
+    }
+
+    .publications-list {
+        border-left: none; /* Remove the left border */
+        padding-left: 0; /* Remove padding */
+    }
+
+    .publication {
+        margin-bottom: 1.5rem; /* Adjust spacing for smaller screens */
+    }
 }
 
 .tutorial {
