@@ -1,52 +1,99 @@
-function showSection(sectionId) {
-    // Create and show transition bar
-    const bar = document.createElement('div');
-    bar.className = 'transition-bar';
-    document.body.appendChild(bar);
+// function showSection(sectionId) {
+//     // Create and show transition bar
+//     const bar = document.createElement('div');
+//     bar.className = 'transition-bar';
+//     document.body.appendChild(bar);
 
-    // Animate bar with random segments
-    let width = 0;
-    const segments = Math.floor(Math.random() * 3) + 3; // 3-5 segments
-    const segmentWidth = 100 / segments;
+//     // Animate bar with random segments
+//     let width = 0;
+//     const segments = Math.floor(Math.random() * 3) + 3; // 3-5 segments
+//     const segmentWidth = 100 / segments;
     
-    const animateBar = () => {
-        if (width < 100) {
-            width += segmentWidth;
-            bar.style.width = width + '%';
-            setTimeout(animateBar, Math.random() * 200 + 100); // Random delay between 100-300ms
-        } else {
-            bar.remove();
-        }
-    };
+//     const animateBar = () => {
+//         if (width < 100) {
+//             width += segmentWidth;
+//             bar.style.width = width + '%';
+//             setTimeout(animateBar, Math.random() * 200 + 100); // Random delay between 100-300ms
+//         } else {
+//             bar.remove();
+//         }
+//     };
     
-    animateBar();
+//     animateBar();
 
+//     // Hide all sections
+//     document.querySelectorAll('.section').forEach(section => {
+//         section.classList.remove('active');
+//     });
+    
+//     // Remove active class from all nav links
+//     document.querySelectorAll('nav a').forEach(link => {
+//         link.classList.remove('active');
+//     });
+    
+//     // Show the selected section
+//     document.getElementById(sectionId).classList.add('active');
+    
+//     // Add active class to the clicked nav link
+//     document.querySelector(`nav a[onclick="showSection('${sectionId}')"]`).classList.add('active');
+
+//     // If showing thoughts section, reset to thoughts list
+//     if (sectionId === 'thoughts') {
+//         document.getElementById('thoughts-list').classList.remove('hidden');
+//         document.getElementById('thought-content').classList.remove('active');
+//         document.querySelector('.thoughts-title').classList.remove('hidden');
+//     }
+// }
+function showSection(sectionId, updateHistory = true) {
     // Hide all sections
     document.querySelectorAll('.section').forEach(section => {
         section.classList.remove('active');
     });
-    
+
     // Remove active class from all nav links
     document.querySelectorAll('nav a').forEach(link => {
         link.classList.remove('active');
+        link.blur(); // Remove focus to fix mobile hover issue
     });
-    
+
     // Show the selected section
     document.getElementById(sectionId).classList.add('active');
-    
-    // Add active class to the clicked nav link
-    document.querySelector(`nav a[onclick="showSection('${sectionId}')"]`).classList.add('active');
 
-    // If showing thoughts section, reset to thoughts list
+    // Add active class to the clicked nav link
+    document.querySelector(`nav a[onclick="showSection('${sectionId}')"]`)?.classList.add('active');
+
+    // If showing the thoughts section, reset to the thoughts list
     if (sectionId === 'thoughts') {
         document.getElementById('thoughts-list').classList.remove('hidden');
         document.getElementById('thought-content').classList.remove('active');
         document.querySelector('.thoughts-title').classList.remove('hidden');
     }
+
+    // Update browser history
+    if (updateHistory) {
+        history.pushState({ sectionId }, '', `#${sectionId}`);
+    }
 }
 
+// Handle browser back/forward button
+window.addEventListener('popstate', (event) => {
+    const sectionId = event.state?.sectionId || 'about'; // Default to "about" section
+    showSection(sectionId, false); // Do not update history again
+});
+
+// Initialize the correct section on page load
+document.addEventListener('DOMContentLoaded', () => {
+    const initialSectionId = location.hash.replace('#', '') || 'about'; // Default to "about" section
+    showSection(initialSectionId, false); // Do not update history on initial load
+});
+
+
+// edited above **********
 
 function showThought(thoughtId) {
+    // Push the thoughts section to the history stack before navigating to the thought
+    history.pushState({ sectionId: 'thoughts' }, '', '#thoughts');
+
     // Hide thoughts list and title
     document.getElementById('thoughts-list').classList.add('hidden');
     document.querySelector('.thoughts-title').classList.add('hidden');

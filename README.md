@@ -3,6 +3,8 @@
 This is my personal website hosted on GitHub Pages, focusing on my research in AI and Hydrology.
 [UNDER PREPARATION]
 
+> "Novelty is the essence of life, embrace it through creativity"
+
 ## Setup Instructions
 
 1. Fork this repository
@@ -42,7 +44,6 @@ assets/
 
 ## TODO
 
-- No back button
 - Add transition effects/animation
 - Update the tutorials (notes now are placeholders)
 - Optimize the code, lot of jargons
@@ -56,6 +57,8 @@ assets/
 - Fast loading times
 - Coding-themed typography
 - Professional research focus
+- Monokai-themed code blocks
+- Space Grotesk typography
 
 ## Technologies Used
 
@@ -63,7 +66,8 @@ assets/
 - CSS3
 - JavaScript
 - Font Awesome icons
-- JetBrains Mono and Fira Code fonts
+- Space Grotesk font
+- Google Fonts
 
 ## License
 

@@ -87,6 +87,7 @@ main {
     }
 }
 
+
 a:hover {
     color: #fff;
 }
@@ -98,7 +99,12 @@ a.active {
     text-decoration-color: #999;
 }
 
-
+/* Disable hover effects on touch devices */
+@media (hover: none) {
+    a:hover {
+        color: inherit; /* Reset to default color */
+    }
+}
 
 h1, h2 {
     color: #fff;
