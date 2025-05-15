@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KTPETSCQGS"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-KTPETSCQGS');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sinan Rasiya Koya</title>
@@ -16,6 +25,7 @@
         <ul>
             <li><a onclick="showSection('about')">About</a></li>
             <li><a onclick="showSection('publications')">Publications</a></li>
+            <li><a onclick="showSection('projects')">Projects</a></li>
             <li><a onclick="showSection('tutorials')">Tutorials</a></li>
             <li><a onclick="showSection('thoughts')">Thoughts</a></li>
             <li><a onclick="showSection('contact')">Contact</a></li>
@@ -77,7 +87,7 @@
         <div id="publications" class="section">
             <h2>Publications</h2>
             <div class="publications-container">
-                <a href="https://scholar.google.com/citations?user=qrAUhPQAAAAJ&hl=en" target="_blank" title="Google Scholar">
+                <a href="https://scholar.google.com/citations?user=qrAUhPQAAAAJ&hl=en" target="_blank" title="Google Scholar" class="scholar-link" style="transition: color 0.3s ease, font-weight 0.3s ease;" onmouseover="this.style.fontWeight='bold';this.style.transform='none'" onmouseout="this.style.fontWeight='normal'">
                     <i class="fas fa-graduation-cap"></i> Google Scholar
                 </a>
                 <div class="publication-year-group">
@@ -182,6 +192,207 @@
                                 </a>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="projects" class="section">
+            <h2>Projects</h2>
+            <p style="text-align: left; font-size: 1rem; font-weight: normal; font-style: italic;">
+                Over the past years, I have been fortunate to be part of various impactful projects. 
+                This has been a great learning experience. Huge thanks to my mentors and colleagues who made these projects possible.
+            </p>
+            <div class="projects-container">
+                <div class="project">
+                    <div class="project-content">
+                        <h3>Global Composite Drought Indicator Hot Spot Early Warning and Information System</h3>
+                        <div class="project-description">
+                            Extreme weather can contribute to civil unrest. In the effort lead by Dr. Mark
+                            Svoboda, I have been actively involved in the ML implementation aiding the National 
+                            Drought Mitigation Center to predict civil unrest from droughts. Read more in the news 
+                            coverage below.
+                        </div>
+                        <!-- <div class="project-meta">
+                            <span class="project-tech">Python, Tensorflow, Xarray, GeoPandas, Matplotlib</span>
+                        </div> -->
+                        <div class="project-links">
+                            <a href="https://news.unl.edu/article/drought-center-kicks-off-1-million-defense-project-to-predict-unrest" class="project-link"><i class="fas fa-newspaper"></i> News coverage</a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <img src="assets/images/Project_NDMC_logo.svg" alt="Water Cycle Diagram">
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-content">
+                        <h3>Streamflow Forecasting with Temporal Fusion Transformers</h3>
+                        <div class="project-description">
+                            Does combining recurrence with attention improve time series modeling of streamflow? 
+                            We addressed this question and showed that it does, by implementing advanced AI forecasting models 
+                            (Transformers, Temporal Fusion Transformers - TFT, LSTM) for streamflow prediction in 2,610 catchments 
+                            worldwide. 
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-tech">PyTorch, Lightning, CUDA, HPC, Shell, Xarray, NetCDF</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://doi.org/10.1016/j.jhydrol.2024.131301" class="project-link"><i class="fas fa-file-alt"></i> Journal Article</a> | 
+                            <a href="https://ui.adsabs.harvard.edu/abs/2023AGUFM.H34C..08R/abstract" class="project-link"><i class="fas fa-chalkboard-teacher"></i> AGU 2023 Conference</a> | 
+                            <a href="https://github.com/sinanrk/TFT-streamflow.git" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <img src="assets/images/Project_TFT_Runoff.svg" alt="Water Cycle Diagram">
+                    </div>
+                </div>
+
+
+                <div class="project">
+                    <div class="project-content">
+                        <h3>Prototype Flood Forecasting System for Nebraska</h3>
+                        <div class="project-description">
+                            With a team from the Iowa Flood Center (IFC) and Nebraska DOT, I led the implementation 
+                            of a prototype for a flood forecasting system in Nebraska. We . This project involved 
+                            enhancement the Hillslope Link Model (HLM) to incorporate snow processes, installation 
+                            of streamflow sensors, assimilation of streamflow measurements into the model simulation, 
+                            integration of radar-based precipitation, flood risk vulnerability assessment, and 
+                            development of a web interface to show the flood conditions. 
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-tech">C++, PostgreSQL, QGIS, MRMS-QPE, HTML, Python, Matlab</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://doi.org/10.1016/j.envsoft.2023.105693" class="project-link"><i class="fas fa-file-alt"></i> Journal Article</a> | 
+                            <a href="https://ui.adsabs.harvard.edu/abs/2021AGUFM.C35G0966R/abstract" class="project-link"><i class="fas fa-chalkboard-teacher"></i> AGU 2021 Conference</a> | 
+                            <a href="https://github.com/sinanrk/asynch/tree/HLM-PSnow" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <img src="assets/images/Project_HLM_Schematic.svg" alt="Water Cycle Diagram">
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-content">
+                        <h3>Impacts of Snow droughts and Associated Compound Events on Streamflow</h3>
+                        <div class="project-description">
+                            Snow droughts are escalating in the context of climate change. Less snow means less
+                            river flow in warmer seasons. We assess global rivers vulnerable to snow droughts 
+                            by analyzing large-scale climatedata.
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-tech">Python, Google Earth Engine, HPC Parallel computing, ERA5-Land, MERRA2, CMIP6</span>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <img src="assets/images/Project_Snow2HydroDrought.png" alt="Water Cycle Diagram">
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-content">
+                        <h3>Drivers and Impacts of Rain-on-Snow in United States</h3>
+                        <div class="project-description">
+                            Warm rain hitting snow, does that sound trivial? Losses from catastrophic floods induced by 
+                            rain-on-snow (ROS) events are in the orders of billions of dollars. We address two parts of
+                            ROS mechanism. 1. What lead to ROS occurrence, spefically the effects of large-scale climate 
+                            patterns 2. How does ROS events lead to floods. In the first part, we found an important 
+                            causal link between the North Pacific sea-level pressure (SLP) pattern and ROS frequency 
+                            in North America (find the link to journal article below). In the ongoing second part, by 
+                            imulating land surface processes using Noah-MP, we assess the critical hydrological processes 
+                            during ROS events that lead to floods.
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-tech">Noah-MP, FORTRAN, Convergent Cross Mapping, NLDAS-2, GHCN-D</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://doi.org/10.1038/s43247-024-01431-6" class="project-link"><i class="fas fa-file-alt"></i> Journal Article</a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <img src="assets/images/Project_ROS_frequency.png" alt="Water Cycle Diagram">
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-content">
+                        <h3>Diffusion based rainfall runoff modeling</h3>
+                        <div class="project-description">
+                            This ongoing study introduces a rainfall-runoff modeling framework based on Denoising 
+                            Diffusion Probabilistic Models (DDPM), originally used in image generation. The model predicts 
+                            streamflow by conditioning each day's discharge on hydroclimatic variables and the model’s 
+                            previous estimate, allowing sequential simulation. 
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-tech">PyTorch, Lightning, HPC, Numba, Dask</span>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <img src="assets/images/Project_Diffusion.svg" alt="Water Cycle Diagram">
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-content">
+                        <h3>Great Lakes Runoff Intercomparison Project – Great Lakes (GRIP-GL)</h3>
+                        <div class="project-description">
+                            I was part of the study led by Dr. Juliane Mai which benchmarked various hydrologic models 
+                            across the Great Lakes basin. Our candidate model, HYMOD2, was one of the top performing
+                            model in general. HYMOD2-lumped demonstrated exceptional performance in simulating actual 
+                            evapotranspiration (AET). Read more in the paper below.
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-tech">Hymod-2, Raven, Conceptual hydrological models, Matlab</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://doi.org/10.5194/hess-26-3537-2022" class="project-link"><i class="fas fa-file-alt"></i> Journal Article</a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <img src="assets/images/Project_GRIPGL.png" alt="Water Cycle Diagram">
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-content">
+                        <h3>Topology-based Flood Vulnerability of Global River Networks</h3>
+                        <div class="project-description">
+                            A graph theoretic analysis of global river networks to assess topology-based flood risk. 
+                            Using Maximum flow algorithms on directed tree networks representing major global rivers, 
+                            we revealed regions prone to flooding on a topological basis.
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-tech">Python, NetworkX, Cytoscape, iGraph, ArcGIS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/sinanrk/GraphNetwork-FloodVulnerability" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <img src="assets/images/Project_GraphRiver.svg" alt="Water Cycle Diagram">
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-content">
+                        <h3>Synthetic Global Precipitation Maps by Generative Adversarial Networks</h3>
+                        <div class="project-description">
+                            Generative Adversarial Networks (GANs) shifted the paradigm of AI with its remarkable 
+                            ability to generate realistic images. Here, we use GANs to generate global precipitation 
+                            maps at a resolution of 2.5°x2.5°. Read more in the report below.
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-tech">PyTorch, GANs</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/sinanrk/GAN-PrecipitationMaps/blob/main/assets/Report.pdf" class="project-link"><i class="fas fa-file-alt"></i> Report</a> | 
+                            <a href="https://github.com/sinanrk/GAN-PrecipitationMaps" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <img src="assets/images/Project_GAN.svg" alt="Water Cycle Diagram">
                     </div>
                 </div>
             </div>
